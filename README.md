@@ -1,14 +1,14 @@
 # appointy
 meeting project
 
-urls 
+# urls 
 router.HandleFunc("/meetings", CreateMeetings).Methods("POST")
-	router.HandleFunc("/meeting/{id}", GetMeetingWidEndpoint).Methods("GET")
-	router.HandleFunc("/meeting/{start}/{end}", GetMeetingEndpoint).Methods("GET")
-	router.HandleFunc("/articals/{paricipants}", GetMeetingOfParticiEndpoint).Methods("GET")
-	http.ListenAndServe(":8080", router)
+router.HandleFunc("/meeting/{id}", GetMeetingWidEndpoint).Methods("GET")
+router.HandleFunc("/meeting/{start}/{end}", GetMeetingEndpoint).Methods("GET")
+router.HandleFunc("/articals/{paricipants}", GetMeetingOfParticiEndpoint).Methods("GET")
+http.ListenAndServe(":8080", router)
   
-  json Structure
+ # json Structure
   
   {
 	"title":"batt krne ke liye",
